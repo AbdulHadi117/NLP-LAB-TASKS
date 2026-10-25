@@ -1,0 +1,64 @@
+regex regex regular expression special pattern language
+used find specific pieces text emails phone numbers dates inside big block text
+matters raw text emails chats documents contains useful information mixed lot text
+without regex would search everything hand slow full mistakes
+used nlp pipeline regex used preprocessing step
+nlp model works data clean text pull specific information like emails phone numbers using regex
+character classes character classes tell regex type character look
+symbol meaning digit w word character letters digits underscore space tab new line az lowercase letter z az custom set capital letters digits matters basic building blocks regex
+used nlp pipeline every extraction task email phone number date built using character classes
+quantifiers quantifiers tell regex many times character group repeat
+symbol meaning zero times one times zero one time optional nm least n times times matters real text patterns always fixed length
+used nlp pipeline quantifiers help match items whose length change order ids dates
+groups groups used capture one specific part match pull separately later
+example dd separately capture area code number
+matters sometimes need whole match need one small part example year date
+used nlp pipeline groups used building structured data creating csv json file field must separated
+part b patternbased extraction using
+findallpattern text finds matches pattern piece text returns list
+email extraction import pattern rw
+findallpattern text matters often need automatically find email addresses example contact lists spam filtering
+used nlp pipeline part information extraction data cleaning example hiding personal information
+phone number extraction pattern rd
+sd matters phone numbers appear many formats dashes spaces country codes
+used nlp pipeline used customer support systems crm customer data tools pull contact numbers
+order id extraction example format ord pattern rorddd matters business emails documents often contain specific ids need pulled automatically
+used nlp pipeline used linking records matching data database
+date extraction pattern rddd matters dates appear everywhere many different formats
+used nlp pipeline used timeline analysis event extraction tasks
+matters often need pull numeric facts like statistics percentages reports articles
+used nlp pipeline used data analytics nlp tasks based numbers statistics
+part c word tokenization c
+tokenization tokenization means breaking text small pieces called tokens
+tokens usually words punctuation marks
+matters nlp model understand raw sentences directly
+needs tokens later turned numbers model
+used nlp pipeline tokenization first step almost every nlp pipeline
+everything else like pos tagging parsing creating embeddings happens step
+tokenize import wordtokenize wordtokenizei dont like
+nltk tokenization simple rulebased fast
+spacy tokenization import spacy nlp spacy
+blanken doc nlpi dont like
+text token doc spacy tokenization smarter follows detailed language rules
+nltk vs spacy comparison feature nltk spacy speed medium fast contractions dont splits differently handles smartly output type list plain text words token objects extra attributes best used learning research realworld production nlp projects matters two tools give different tokenization results
+students know tool choose real project
+used nlp pipeline choice tokenizer affects whole pipeline every later step like ner parsing depends text tokenized
+part e token attributes spacy every token object
+object already builtin attributes tell us type token
+isalpha token made letters token
+likenum token look like number digits number words token
+likeemail token look like email address token
+iscurrency token currency symbol like rs token doc printtoken
+iscurrency matters instead writing regex every time spacy already tells us category token belongs
+used nlp pipeline attributes directly used rulebased filtering data cleaning feature engineering example separating numbers hiding emails highlighting currency values
+part f sentence segmentation f
+sentence segmentation sentence segmentation means breaking paragraph individual sentences
+text matters many nlp tasks summarization translation question answering work sentence level
+processing whole paragraph give wrong results
+used nlp pipeline step comes tokenization higherlevel tasks like parsing summarization named entity recognition ner
+tricky cases abbreviations like dr
+spacys trained model blank pipeline handles tricky cases better learned real language patterns
+matters sentence boundaries detected wrongly every later step summarization sentiment analysis translation also go wrong
+used nlp pipeline good sentence segmentation foundation documentlevel nlp applications chatbots text summarizers
+quick recap table pipeline order step topic pipeline stage regex fundamentals preprocessing cleaning patternbased extraction information extraction word tokenization text tokens token attributes feature engineering filtering sentence segmentation tokens sentencelevel structure order matters real nlp system text first cleaned important information extracted tokenized check properties token finally text organized sentences
+later steps like pos tagging ner model training begin

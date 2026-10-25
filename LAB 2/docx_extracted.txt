@@ -1,0 +1,16 @@
+--- PRE-TABLE PARAGRAPHS ---
+Part A: Regex Fundamentals (Foundation) 
+A1. What is Regex? 
+Regex (Regular Expression) is a special pattern language. It is used to find specific pieces of text, such as emails, phone numbers, or dates, inside a big block of text. 
+Why it matters: Raw text (emails, chats, documents) contains useful information mixed with a lot of other text. Without regex, we would have to search everything by hand, which is slow and full of mistakes. 
+Where it is used in NLP pipeline: Regex is used in the preprocessing step. Before any NLP model works on the data, we clean the text or pull out specific information (like emails or phone numbers) using regex. 
+A2. Character Classes 
+Character classes tell regex what type of character to look for. 
+
+--- TABLE DATA ---
+Symbol  | Meaning 
+\d  | Any digit (0-9) 
+\w  | Any word character (letters, digits, underscore) 
+\s  | Space, tab, or new line 
+[a-z]  | Any lowercase letter from a to z 
+[A-Z0-9]  | A custom set - capital letters or digits 
